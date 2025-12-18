@@ -6,6 +6,8 @@ class solidColors{
  static const Color colorTitle = Color.fromARGB(255, 40, 107, 184);
  static const Color textTitle = Color.fromARGB(255, 0, 0, 0);
  static const Color scaffoldBg = Color.fromARGB(255, 255, 255, 255);
+ static const Color statusBarColor = Color.fromARGB(255, 255, 255, 255);
+ static const Color systemNavigationBarColor = Color.fromARGB(255, 255, 255, 255);
  static const Color lightText = Color.fromARGB(255, 255, 255, 255);
  static const Color selectedPodCast = Color.fromARGB(255, 255, 139, 26);
  static const Color submitArtical = Color.fromARGB(255, 209, 209, 209);
@@ -22,6 +24,12 @@ class solidColors{
  static const List<Color> tags =[ 
   const Color.fromARGB(255, 0, 0, 0),
   const Color.fromARGB(255, 63, 63, 87)
+  ];
+
+  static const List<Color> homePosterCoverGradiant =[ 
+  const Color.fromARGB(0, 0, 0, 0),
+  const Color.fromARGB(195, 72, 20, 88),
+  const Color.fromARGB(255, 280, 20, 81)
   ];
 
 }

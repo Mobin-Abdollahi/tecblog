@@ -17,7 +17,7 @@ class SplashScreen extends StatefulWidget {
 
     Future.delayed(Duration(seconds: 3)).then((value){
 
-      Navigator.of(context).push(MaterialPageRoute(
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
         builder: (context)=> MainScreen()
         ));
     });
