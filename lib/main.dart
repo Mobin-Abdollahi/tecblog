@@ -39,13 +39,22 @@ class MyApp extends StatelessWidget {
   ],
       theme: ThemeData(
         fontFamily: 'B Mitra',
+        brightness: Brightness.light,
         textTheme: TextTheme(
 
           headlineMedium:TextStyle(
             fontFamily: 'B Mitra',
             fontSize: 20,
-            fontWeight: FontWeight.w700
+            fontWeight: FontWeight.w700,
+            color: solidColors.posterTitle
              ),
+
+          titleSmall:TextStyle(
+            fontFamily: 'B Mitra',
+            fontSize: 18,
+            fontWeight: FontWeight.w300,
+            color: solidColors.posterSubTitle
+             ), 
 
              bodyMedium:TextStyle(
             fontFamily: 'B Mitra',
@@ -63,14 +72,14 @@ class MyApp extends StatelessWidget {
              headlineLarge:TextStyle(
             fontFamily: 'B Mitra',
             fontSize: 16,
-            color: Colors.red,
+            color: const Color.fromARGB(255, 53, 53, 53),
             fontWeight: FontWeight.w700
              ),
 
              titleMedium:TextStyle(
             fontFamily: 'B Mitra',
             fontSize: 16,
-            color: Colors.green,
+            color: const Color.fromARGB(255, 70, 70, 70),
             fontWeight: FontWeight.w700
              )   
 
