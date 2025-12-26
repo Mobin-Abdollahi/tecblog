@@ -15,6 +15,8 @@ class solidColors{
  static const Color submitArtical = Color.fromARGB(255, 209, 209, 209);
  static const Color submitPodCasts = Color.fromARGB(255, 246, 246, 246);
  static const Color subText = Color.fromARGB(255, 197, 197, 197);
+ static const Color hashtag = Color.fromARGB(255, 255, 255, 255);
+ static const Color seeMore = Color.fromARGB(255, 40, 107, 184);
 
 }class gradiantColors{
 
@@ -26,6 +28,10 @@ class solidColors{
  static const List<Color> tags =[ 
   const Color.fromARGB(255, 0, 0, 0),
   const Color.fromARGB(255, 63, 63, 87)
+  ];
+  static const List<Color> blogPost =[ 
+  const Color.fromARGB(255, 0, 0, 0),
+  const Color.fromARGB(0, 0, 0, 0)
   ];
 
   static const List<Color> homePosterCoverGradiant =[ 

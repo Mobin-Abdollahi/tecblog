@@ -72,7 +72,7 @@ class MyApp extends StatelessWidget {
              headlineLarge:TextStyle(
             fontFamily: 'B Mitra',
             fontSize: 16,
-            color: const Color.fromARGB(255, 53, 53, 53),
+            color: solidColors.seeMore,
             fontWeight: FontWeight.w700
              ),
 

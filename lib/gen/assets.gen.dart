@@ -14,12 +14,20 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/Pencil-icon.png
+  AssetGenImage get pencilIcon =>
+      const AssetGenImage('assets/icons/Pencil-icon.png');
+
   /// File path: assets/icons/hashtagicon.png
   AssetGenImage get hashtagicon =>
       const AssetGenImage('assets/icons/hashtagicon.png');
 
+  /// File path: assets/icons/microfon-icon.png
+  AssetGenImage get microfonIcon =>
+      const AssetGenImage('assets/icons/microfon-icon.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [hashtagicon];
+  List<AssetGenImage> get values => [pencilIcon, hashtagicon, microfonIcon];
 }
 
 class $AssetsImagesGen {
