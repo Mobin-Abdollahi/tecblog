@@ -18,16 +18,35 @@ class $AssetsIconsGen {
   AssetGenImage get pencilIcon =>
       const AssetGenImage('assets/icons/Pencil-icon.png');
 
+  /// File path: assets/icons/feather-icon.png
+  AssetGenImage get featherIcon =>
+      const AssetGenImage('assets/icons/feather-icon.png');
+
   /// File path: assets/icons/hashtagicon.png
   AssetGenImage get hashtagicon =>
       const AssetGenImage('assets/icons/hashtagicon.png');
 
-  /// File path: assets/icons/microfon-icon.png
-  AssetGenImage get microfonIcon =>
-      const AssetGenImage('assets/icons/microfon-icon.png');
+  /// File path: assets/icons/home-icon.png
+  AssetGenImage get homeIcon =>
+      const AssetGenImage('assets/icons/home-icon.png');
+
+  /// File path: assets/icons/microphone-icon.png
+  AssetGenImage get microphoneIcon =>
+      const AssetGenImage('assets/icons/microphone-icon.png');
+
+  /// File path: assets/icons/user-icon.png
+  AssetGenImage get userIcon =>
+      const AssetGenImage('assets/icons/user-icon.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [pencilIcon, hashtagicon, microfonIcon];
+  List<AssetGenImage> get values => [
+    pencilIcon,
+    featherIcon,
+    hashtagicon,
+    homeIcon,
+    microphoneIcon,
+    userIcon,
+  ];
 }
 
 class $AssetsImagesGen {

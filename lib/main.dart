@@ -4,7 +4,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:tekblog_application_4/gen/assets.gen.dart';
 import 'package:tekblog_application_4/my_colors.dart';
-import 'package:tekblog_application_4/splash_screen.dart';
+import 'package:tekblog_application_4/view/splash_screen.dart';
 void main() {
 
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(

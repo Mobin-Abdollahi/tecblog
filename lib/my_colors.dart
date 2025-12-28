@@ -24,6 +24,10 @@ class solidColors{
  static const List<Color> buttonNav =[ 
   const Color.fromARGB(255, 25, 0, 94),
   const Color.fromARGB(255, 64, 4, 87)
+  ]; 
+  static const List<Color> buttonNavBackground =[ 
+  const Color.fromARGB(0, 255, 255, 255),
+  const Color.fromARGB(255, 255, 255, 255)
   ];
  static const List<Color> tags =[ 
   const Color.fromARGB(255, 0, 0, 0),
