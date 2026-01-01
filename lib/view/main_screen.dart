@@ -27,12 +27,6 @@ class _MainScreenState extends State<MainScreen> {
     var size = MediaQuery.of(context).size;
     double bodyMargin = size.width/10;
 
-    List<Widget> techMainScreenPages = [
-
-      homeScreen(size: size, textTheme: textTheme, bodyMargin: bodyMargin),//0
-      profileScreen(size: size, textTheme: textTheme, bodyMargin: bodyMargin),//1
-
-    ];
   
 
     return Scaffold(
@@ -54,7 +48,17 @@ class _MainScreenState extends State<MainScreen> {
       ),
       body: Stack(
         children: [
-           Center(child: techMainScreenPages[selectedPageIndex]),
+           Center(child: IndexedStack(
+            index: selectedPageIndex,
+            children: [
+
+             homeScreen(size: size, textTheme: textTheme, bodyMargin: bodyMargin),//0
+             profileScreen(size: size, textTheme: textTheme, bodyMargin: bodyMargin),//1
+
+            ],
+           )
+           
+           ),
           BottomNav(
             size: size, 
             bodyMargin: bodyMargin, 
