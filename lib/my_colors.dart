@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-class solidColors{
+class SolidColors{
 
  static const Color posterSubTitle = Color.fromARGB(200, 255, 255, 255);
  static const Color posterTitle = Color.fromARGB(255, 255, 255, 255);
@@ -18,31 +18,32 @@ class solidColors{
  static const Color hashtag = Color.fromARGB(255, 255, 255, 255);
  static const Color seeMore = Color.fromARGB(255, 40, 107, 184);
  static const Color dividerColor = Color.fromARGB(255, 112, 112, 112);
+ static const Color hintText = Color.fromARGB(255, 219, 219, 219);
 
-}class gradiantColors{
+}class GradiantColors{
 
 
  static const List<Color> buttonNav =[ 
-  const Color.fromARGB(255, 25, 0, 94),
-  const Color.fromARGB(255, 64, 4, 87)
+  Color.fromARGB(255, 25, 0, 94),
+  Color.fromARGB(255, 64, 4, 87)
   ]; 
   static const List<Color> buttonNavBackground =[ 
-  const Color.fromARGB(0, 255, 255, 255),
-  const Color.fromARGB(255, 255, 255, 255)
+  Color.fromARGB(0, 255, 255, 255),
+  Color.fromARGB(255, 255, 255, 255)
   ];
  static const List<Color> tags =[ 
-  const Color.fromARGB(255, 0, 0, 0),
-  const Color.fromARGB(255, 63, 63, 87)
+  Color.fromARGB(255, 0, 0, 0),
+  Color.fromARGB(255, 63, 63, 87)
   ];
   static const List<Color> blogPost =[ 
-  const Color.fromARGB(255, 0, 0, 0),
-  const Color.fromARGB(0, 0, 0, 0)
+  Color.fromARGB(255, 0, 0, 0),
+  Color.fromARGB(0, 0, 0, 0)
   ];
 
   static const List<Color> homePosterCoverGradiant =[ 
-  const Color.fromARGB(0, 0, 0, 0),
-  const Color.fromARGB(195, 72, 20, 88),
-  const Color.fromARGB(255, 280, 20, 81)
+  Color.fromARGB(0, 0, 0, 0),
+  Color.fromARGB(195, 72, 20, 88),
+  Color.fromARGB(255, 280, 20, 81)
   ];
 
 }

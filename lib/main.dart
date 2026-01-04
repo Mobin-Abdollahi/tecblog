@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:tekblog_application_4/gen/assets.gen.dart';
 import 'package:tekblog_application_4/my_colors.dart';
+import 'package:tekblog_application_4/view/main_screen.dart';
 import 'package:tekblog_application_4/view/register_intro.dart';
-import 'package:tekblog_application_4/view/splash_screen.dart';
 void main() {
 
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     
-    statusBarColor: solidColors.statusBarColor,
+    statusBarColor: SolidColors.statusBarColor,
     statusBarIconBrightness: Brightness.dark,
-    systemNavigationBarColor: solidColors.systemNavigationBarColor,
+    systemNavigationBarColor: SolidColors.systemNavigationBarColor,
     systemNavigationBarIconBrightness: Brightness.dark
     
      ));
@@ -27,6 +25,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    var textTheme = Theme.of(context).textTheme;
+
     return MaterialApp(
          //rastchin shod
         localizationsDelegates: [
@@ -39,6 +39,31 @@ class MyApp extends StatelessWidget {
 
   ],
       theme: ThemeData(
+        inputDecorationTheme: InputDecorationTheme(
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(16),
+            borderSide:const BorderSide(width: 2)
+          ),
+          filled: true,
+          fillColor: Colors.white,
+          ),
+
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+            textStyle: WidgetStateProperty.resolveWith((states) {
+              if (states.contains(WidgetState.pressed)) {
+                return textTheme.headlineMedium;
+              }
+              return textTheme.titleSmall;
+            }),
+            backgroundColor: WidgetStateProperty.resolveWith((states) {
+              if (states.contains(WidgetState.pressed)) {
+                return SolidColors.seeMore;
+              }
+              return SolidColors.primaryColor;
+            }),
+          ),
+        ),
         fontFamily: 'B Mitra',
         brightness: Brightness.light,
         textTheme: TextTheme(
@@ -47,14 +72,14 @@ class MyApp extends StatelessWidget {
             fontFamily: 'B Mitra',
             fontSize: 20,
             fontWeight: FontWeight.w700,
-            color: solidColors.posterTitle
+            color: SolidColors.posterTitle
              ),
 
           titleSmall:TextStyle(
             fontFamily: 'B Mitra',
             fontSize: 18,
             fontWeight: FontWeight.w300,
-            color: solidColors.posterSubTitle
+            color: SolidColors.posterSubTitle
              ), 
 
              bodyMedium:TextStyle(
@@ -73,7 +98,7 @@ class MyApp extends StatelessWidget {
              headlineLarge:TextStyle(
             fontFamily: 'B Mitra',
             fontSize: 16,
-            color: solidColors.seeMore,
+            color: SolidColors.seeMore,
             fontWeight: FontWeight.w700
              ),
 
@@ -82,13 +107,20 @@ class MyApp extends StatelessWidget {
             fontSize: 16,
             color: const Color.fromARGB(255, 70, 70, 70),
             fontWeight: FontWeight.w700
+             ),
+
+            titleLarge:TextStyle(
+            fontFamily: 'B Mitra',
+            fontSize: 16,
+            color: SolidColors.hintText,
+            fontWeight: FontWeight.w700
              )   
 
         )
       ),
       debugShowCheckedModeBanner: false,
      // home: SplashScreen()
-      home: RegisterIntro()
+      home:const RegisterIntro()
     );
   }
 }

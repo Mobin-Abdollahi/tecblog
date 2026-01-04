@@ -36,7 +36,7 @@ class SplashScreen extends StatefulWidget {
             Image(image: AssetImage(Assets.images.logo.path),height: 64,),
             SizedBox(height: 32,),
              SpinKitFadingCube(
-             color: solidColors.primaryColor,
+             color: SolidColors.primaryColor,
               size: 32.0,
             )
           

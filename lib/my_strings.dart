@@ -10,6 +10,7 @@ static const String imageProfileEdit = "ویرایش عکس پروفایل";
 static const String myFavBlog = "مقالات مورد علاقه من";
 static const String myFavPodCast = "پادکست های مورد علاقه من";
 static const String logOut = "خروج از حساب کاربری";
+static const String insertYourEmail = "لطفا ایمیل خود را وارد کنید";
 static const String welcome = """به تک بلاگ خوش اومدی
 
  برای ارسال مطالب و پادکست باید حتما

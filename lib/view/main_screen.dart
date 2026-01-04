@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:tekblog_application_4/Model/fake_data.dart';
 import 'package:tekblog_application_4/gen/assets.gen.dart';
 import 'package:tekblog_application_4/my_colors.dart';
-import 'package:tekblog_application_4/Model/fake_data.dart';
-import 'package:tekblog_application_4/my_strings.dart';
 import 'package:tekblog_application_4/view/home_screen.dart';
 import 'package:tekblog_application_4/view/profile_screen.dart';
 
@@ -32,7 +28,7 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: solidColors.scaffoldBg,
+        backgroundColor: SolidColors.scaffoldBg,
         title: 
            Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -48,16 +44,16 @@ class _MainScreenState extends State<MainScreen> {
       ),
       body: Stack(
         children: [
-           Center(child: IndexedStack(
-            index: selectedPageIndex,
-            children: [
-
-             homeScreen(size: size, textTheme: textTheme, bodyMargin: bodyMargin),//0
-             profileScreen(size: size, textTheme: textTheme, bodyMargin: bodyMargin),//1
-
-            ],
-           )
-           
+           Positioned.fill(
+             child: IndexedStack(
+              index: selectedPageIndex,
+              children: [
+             
+               HomeScreen(size: size, textTheme: textTheme, bodyMargin: bodyMargin),//0
+               ProfileScreen(size: size, textTheme: textTheme, bodyMargin: bodyMargin),//1
+             
+              ],
+             ),
            ),
           BottomNav(
             size: size, 
@@ -101,7 +97,7 @@ class BottomNav extends StatelessWidget {
               height: size.height/10,
               decoration:const BoxDecoration(
       gradient: LinearGradient(
-        colors: gradiantColors.buttonNavBackground,
+        colors: GradiantColors.buttonNavBackground,
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter
         )
@@ -113,7 +109,7 @@ class BottomNav extends StatelessWidget {
         decoration:const BoxDecoration(
           borderRadius:BorderRadius.all(Radius.circular(18)) ,
           gradient:  LinearGradient(
-          colors: gradiantColors.buttonNav,
+          colors: GradiantColors.buttonNav,
         )
         ),
         child: Row(
