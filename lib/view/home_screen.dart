@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tekblog_application_4/Model/fake_data.dart';
 import 'package:tekblog_application_4/gen/assets.gen.dart';
 import 'package:tekblog_application_4/my_colors.dart';
+import 'package:tekblog_application_4/my_component.dart';
 import 'package:tekblog_application_4/my_strings.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -281,33 +282,7 @@ class HomePageTagList extends StatelessWidget {
         
         return Padding(
           padding: EdgeInsets.fromLTRB(0,8,index==0 ? bodyMargin : 15,8),
-          child: Container(
-            height: 60,
-            decoration:const BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(24)),
-              gradient: LinearGradient(
-                colors: GradiantColors.tags,
-                begin: Alignment.centerRight,
-                end: Alignment.centerLeft
-                ),
-       
-       
-            ),
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(16,8,8,8),
-            child: Row(
-              children: [
-       
-              ImageIcon(AssetImage(Assets.icons.hashtagicon.path),
-              color: Colors.white,
-              size: 16,),
-              SizedBox(width: 8,),
-              Text(tagList[index].title,style: textTheme.headlineSmall,)
-       
-            ],),
-          ),
-       
-          ),
+          child: MainTags(textTheme: textTheme, index: index,),
         );
       
       })),
